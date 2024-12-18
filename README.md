@@ -85,9 +85,12 @@ spring.datasource.password=
 To view the H2 console:
 
 **To Run the application**
-mvn clean install
-mvn spring-boot:run
-and now go live in index.html
+
+Step 1: mvn clean install
+
+Step 2: mvn spring-boot:run
+
+Step 3: Run the index.html by using live server
 
 # Prerequisites:
 
