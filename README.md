@@ -1,4 +1,5 @@
 #Quiz App
+
 This is a simple quiz application built with Spring Boot. It provides a REST API to manage quiz sessions, fetch random multiple-choice questions, submit answers, and retrieve quiz results. It uses an in-memory H2 database for simplicity and seeds a default user and a few questions at startup.
 
 Features
