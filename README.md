@@ -75,13 +75,14 @@ spring.datasource.username=sa
 spring.datasource.password=
 To view the H2 console:
 
-Run the application
+# To Run the application
+run the command:- mvn spring-boot:run 
 Go to http://localhost:8080/h2-console
 Use jdbc:h2:mem:testdb as the JDBC URL
 Running the Application
-Prerequisites:
 
-Java 17 or higher installed
+Prerequisites:
+Java 21 or higher installed
 Maven installed
 Build and Run:
 From the project root directory:
