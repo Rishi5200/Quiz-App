@@ -30,11 +30,17 @@ Java 17 (or higher)
 Spring Boot 3.x
 
 Spring Data JPA
+
 H2 Database
+
 Maven
+
 Project Structure
+
 bash
+
 Copy code
+
 quiz-app
  ├─ src
  │   ├─ main
@@ -66,7 +72,7 @@ quiz-app
 Configuration
 src/main/resources/application.properties contains the configuration for H2 and JPA:
 
-# properties
+# Properties
 Copy code
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
@@ -84,14 +90,19 @@ Use jdbc:h2:mem:testdb as the JDBC URL
 Running the Application
 
 **bash**
-Copy code
+
 mvn spring-boot:run
+
 The application will start on http://localhost:8080.
 
 # Prerequisites:
+
 Java 21 or higher installed
+
 Maven installed
+
 Build and Run:
+
 From the project root directory:
 
 **API Endpoints**
@@ -100,16 +111,23 @@ POST /api/quiz/start
 Returns a QuizSession object with id and startTime.
 
 **Get Random Question:**
+
 GET /api/quiz/question?sessionId={sessionId}
+
 Returns a random Question that the user hasn’t answered yet during this session. If no new questions are available, a RuntimeException is thrown.
 
 **Submit Answer:**
+
 POST /api/quiz/submit?sessionId={sessionId}&questionId={questionId}&selectedOption={A/B/C/D}
+
 Returns a UserAnswer object with a correct field indicating if the submitted answer was correct.
 
 **Get Results:**
+
 GET /api/quiz/result?sessionId={sessionId}
+
 Returns a SessionResult containing totalAnswered, correctCount, incorrectCount, and details of each UserAnswer.
 
 **Simple Frontend (Optional)**
+
 A simple index.html file with JavaScript fetch calls can be used to interact with these endpoints. Place it in src/main/resources/static or run it via a separate local web server. Ensure CORS is configured if running from a different origin.
