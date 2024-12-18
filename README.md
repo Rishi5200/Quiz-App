@@ -39,8 +39,6 @@ Project Structure
 
 bash
 
-Copy code
-
 quiz-app
  ├─ src
  │   ├─ main
@@ -69,7 +67,9 @@ quiz-app
  │       └─ (test classes)
  ├─ pom.xml
  └─ README.md
-Configuration
+
+**Configuration**
+
 src/main/resources/application.properties contains the configuration for H2 and JPA:
 
 # Properties
