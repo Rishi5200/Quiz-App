@@ -1,0 +1,8 @@
+com/yourpackage/quizapp/config/WebConfig.class
+com/yourpackage/quizapp/QuizappApplication.class
+com/yourpackage/repository/QuestionRepository.class
+com/yourpackage/controller/QuizController.class
+com/yourpackage/model/QuizSession.class
+com/yourpackage/repository/QuizSessionRepository.class
+com/yourpackage/model/Question.class
+com/yourpackage/service/QuizService.class
